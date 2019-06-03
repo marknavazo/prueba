@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Switch, Route, NavLink } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'recompose';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
@@ -68,19 +68,6 @@ class ProfilePage extends Component {
                       alt={authUser.providerData[0].displayName}
                     />
                   </div>
-                </div>
-                <div className="content_block">
-                  <ul className="Profile_menu">
-                    <li>
-                      <NavLink
-                        exact
-                        to={`${ROUTES.PROFILE}`}
-                        activeClassName="selected"
-                      >
-                        Resumen
-                      </NavLink>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </MDBCol>
