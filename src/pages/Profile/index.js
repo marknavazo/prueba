@@ -15,6 +15,16 @@ import * as ROUTES from '../../constants/routes';
 import Loading from '../../components/Loading';
 import GLOBAL from '../../constants/global';
 
+function getSize(url, providerId) {
+  if (providerId === 'facebook.com') {
+    return `${url}/picture?type=large`;
+  }
+  if (providerId === 'twitter.com') {
+    return url.replace('_normal', '');
+  }
+  return url;
+}
+
 class ProfilePage extends Component {
   constructor(props) {
     super(props);
@@ -35,6 +45,7 @@ class ProfilePage extends Component {
 
   render() {
     const { loading } = this.state;
+    const { authUser } = this.props;
 
     if (loading) {
       return <Loading />;
@@ -49,9 +60,12 @@ class ProfilePage extends Component {
                 <div className="content_block">
                   <div className="edit-image">
                     <img
-                      src="https://picsum.photos/id/180/261/236?blur=5"
+                      src={getSize(
+                        authUser.providerData[0].photoURL,
+                        authUser.providerData[0].providerId,
+                      )}
                       className="imgFull"
-                      alt="Profile"
+                      alt={authUser.providerData[0].displayName}
                     />
                   </div>
                 </div>
@@ -88,6 +102,7 @@ class ProfilePage extends Component {
 
 ProfilePage.propTypes = {
   firebase: PropTypes.object,
+  authUser: PropTypes.object,
 };
 
 const mapStateToProps = state => ({

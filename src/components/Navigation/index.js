@@ -104,7 +104,9 @@ class NavigationAuth extends Component {
                   <div className="profile">
                     <div className="name">
                       <i className="fas fa-caret-down" />
-                      {this.initials(authUser.username)}
+                      {this.initials(
+                        authUser.providerData[0].displayName,
+                      )}
                     </div>
                     <ul>
                       <li>

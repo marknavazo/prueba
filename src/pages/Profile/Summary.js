@@ -38,7 +38,7 @@ class SummaryComponent extends Component {
                   name="firstName"
                   component={renderTextField}
                   label="Nombre"
-                  val={authUser.username}
+                  val={authUser.providerData[0].displayName}
                   tooltiptitle="title_mandatory"
                   tooltiptext="text_mandatory"
                   readonly="true"
@@ -49,7 +49,7 @@ class SummaryComponent extends Component {
                 <Field
                   name="Email"
                   component={renderTextField}
-                  val={authUser.email}
+                  val={authUser.providerData[0].email}
                   label="Email"
                   readonly="true"
                 />

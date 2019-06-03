@@ -20,6 +20,16 @@ import Loading from '../../components/Loading';
 import * as ROUTES from '../../constants/routes';
 import GLOBAL from '../../constants/global';
 
+function getSize(url, providerId) {
+  if (providerId === 'facebook.com') {
+    return `${url}/picture?type=large`;
+  }
+  if (providerId === 'twitter.com') {
+    return url.replace('_normal', '');
+  }
+  return url;
+}
+
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -63,7 +73,6 @@ class HomePage extends Component {
   render() {
     const { loading, data } = this.state;
     const { authUser } = this.props;
-
     if (loading) {
       return <Loading />;
     }
@@ -77,12 +86,17 @@ class HomePage extends Component {
             <MDBCol size="3">
               <div className="profile_image">
                 <img
-                  src="https://picsum.photos/id/180/261/236?blur=5"
+                  src={getSize(
+                    authUser.providerData[0].photoURL,
+                    authUser.providerData[0].providerId,
+                  )}
                   className="imgFull"
-                  alt="Profile"
+                  alt={authUser.providerData[0].displayName}
                 />
                 <div className="profile_name">
-                  <h3>Hola {authUser.username}!</h3>
+                  <h3>
+                    Hola {authUser.providerData[0].displayName}!
+                  </h3>
                 </div>
                 <div className="profile_text">
                   <NavLink exact to={`${ROUTES.PROFILE}`}>
