@@ -1,0 +1,10 @@
+export const LANDING = '/';
+export const HOME = '/inicio';
+export const LIST = '/listado-de-usuarios';
+export const NEW_USER = '/nuevo-usuario';
+export const PROFILE = '/perfil';
+export const ADMIN = '/admin';
+export const ADMIN_DETAILS = '/admin/:id';
+export const POLICY = '/legal';
+export const HELP = '/legal/ayuda';
+export const PRIVACY_POLICY = '/legal/privacy-policy';

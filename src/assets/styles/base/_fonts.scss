@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Core Sans A 65';
+    src: url('../fonts/CoreSansA65Bold.eot');
+    src: url('../fonts/CoreSansA65Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansA65Bold.woff2') format('woff2'),
+        url('../fonts/CoreSansA65Bold.woff') format('woff'),
+        url('../fonts/CoreSansA65Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+  @font-face {
+    font-family: 'Core Sans A 35';
+    src: url('../fonts/CoreSansA35Light.eot');
+    src: url('../fonts/CoreSansA35Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoreSansA35Light.woff2') format('woff2'),
+        url('../fonts/CoreSansA35Light.woff') format('woff'),
+        url('../fonts/CoreSansA35Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

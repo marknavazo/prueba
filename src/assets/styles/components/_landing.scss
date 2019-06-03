@@ -1,0 +1,587 @@
+.landing__container{
+    overflow: hidden;
+    z-index: 3;
+    position: relative;
+    background: $black;
+
+    h1, h2, h3 {
+        color: $white;
+    }
+
+    .landing__section1 {
+        position: relative;
+        min-height: 600px;
+        color: $white;
+        background: $gradient;
+        float: left;
+        width: 100%;
+
+        @media only screen and (max-width: 992px){
+            min-height: 480px;
+        }
+
+        &-bkg {
+            position: absolute;
+            top: 100px;
+            left: 5%;
+            bottom: 0;
+            width: 110%;
+            transform: rotate(-5deg) scale(1.2);
+            background: $gradient;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-image: url('../imgs/PIXNIO-1735949-5696x3797.jpg'); 
+            z-index: 2;
+        }
+
+        .container {
+            margin-top: 180px;
+            z-index: 2;
+            position: relative;
+
+            @media only screen and (max-width: 992px){
+                margin-top: 60px;
+            }
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 4em;
+            margin-top: 80px;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 3em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 2em;
+            }
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 4em;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 3em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 2em;
+            }
+        }
+
+        .element{
+            font-weight: bold;
+            font-size: 3em;
+            margin-top: 100px;
+            text-align: center;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 2em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 1.5em;
+            }
+
+            a {
+                color: $white;
+            }
+
+            i {
+                font-size: 2.2em;
+                display: inline-block;
+                cursor: pointer;
+
+                @media only screen and (max-width: 1200px){
+                    margin-right: 30px;
+                }
+            
+                @media only screen and (max-width: 992px){
+                    margin-right: 15px;
+                }
+
+                &:hover {
+                    color: $green;
+                }
+            }
+
+            p {
+                float: left;
+                margin-top: 16px;
+            }
+        }
+
+        .continue{
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .sign_me {
+            background: $green;
+            color: $white;
+            border-radius: 4px;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            height: 60px;
+            line-height: 60px;
+            text-transform: uppercase;
+
+            &:hover {
+                background: $white;
+                color: $green;
+            }
+        }
+
+        .transparent_button {
+            color: $white;
+            border-radius: 4px;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            height: 60px;
+            line-height: 60px;
+            margin-bottom: 20px;
+            border: 1px solid $white;
+            font-size: 1.5em;
+            position: relative;
+
+            &:hover {
+                background: $green;
+                color: $white;
+                border: 1px solid $green;
+            }
+
+            .hidden__button {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+
+        .error {
+            color: white;
+            font-weight: bold;
+            font-size: .9em;
+            text-align: center;
+        }
+    }
+    .landing__section2 {
+        position: relative;     
+        min-height: 480px;
+        color: $white;
+        margin-top: -30px;
+        float: left;
+        text-align: center;
+        width: 100%;
+
+        &-bkg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transform: scaleX(-1) scaleY(-1);
+            background: $gradient;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 4em;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 3em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 2em;
+            }
+        }
+
+        .container {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+
+        .element{
+            font-weight: bold;
+            font-size: 3em;
+            margin-top: 100px;
+            text-align: center;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 2em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 1.5em;
+            }
+
+            a {
+                color: $white;
+            }
+
+            i {
+                font-size: 2.2em;
+                display: inline-block;
+                cursor: pointer;
+
+                @media only screen and (max-width: 1200px){
+                    margin-right: 30px;
+                }
+            
+                @media only screen and (max-width: 992px){
+                    margin-right: 15px;
+                }
+
+                &:hover {
+                    color: $green;
+                }
+            }
+
+            p {
+                float: left;
+                margin-top: 16px;
+            }
+        }
+    
+        i {
+            font-size: 6em;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 5em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 4em;
+            }
+        }
+
+        h3 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 20px;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 1.6em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 1.2em;
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 1.3em;
+        }
+
+        p {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 1.3em;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 1.1em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: .9em;
+            }
+        }
+
+        .sign_me {
+            background: $green;
+            color: $white;
+            border-radius: 4px;
+            text-align: center;
+            width: auto;
+            padding: 0 80px;
+            display: inline-block;
+            height: 60px;
+            line-height: 60px;
+            margin-top: 80px;
+            text-transform: uppercase;
+
+            &:hover {
+                background: $white;
+                color: $green;
+            }
+        }
+    }
+
+    .landing__section3 {
+        position: relative;
+        min-height: 600px;
+        color: $white;
+        float: left;
+        width: 100%;
+        margin-top: -200px;
+
+        &-bkg {
+            position: absolute;
+            top: 100px;
+            left: 5%;
+            bottom: 0;
+            width: 110%;
+            transform: rotate(-5deg) scale(1.2);
+            background-color: $darkblue;
+            z-index: 2;
+        }
+
+        .container {
+            margin-top: 180px;
+            z-index: 2;
+            position: relative;
+            text-align: center;
+        }
+
+        .video__responsive {
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            position: relative;
+
+            iframe, object, embed {
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        i {
+            font-size: 6em;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 5em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 4em;
+            }
+        }
+
+        h3 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 20px;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 1.6em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 1.2em;
+            }
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        .element{
+            font-weight: bold;
+            font-size: 3em;
+            margin-top: 100px;
+            text-align: center;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 2em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 1.5em;
+            }
+
+            a {
+                color: $white;
+            }
+
+            i {
+                font-size: 2.2em;
+                display: inline-block;
+                cursor: pointer;
+
+                @media only screen and (max-width: 1200px){
+                    margin-right: 30px;
+                }
+            
+                @media only screen and (max-width: 992px){
+                    margin-right: 15px;
+                }
+
+                &:hover {
+                    color: $green;
+                }
+            }
+
+            p {
+                float: left;
+                margin-top: 16px;
+            }
+        }
+
+        .transparent_button {
+            background-color: transparent;
+            color: $white;
+            border-radius: 4px;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            height: 60px;
+            line-height: 60px;
+            margin-bottom: 20px;
+            border: 1px solid $white;
+            margin-top: 50px;
+
+            &:hover {
+                background: $green;
+                color: $white; 
+                border: 1px solid $green;
+            }
+        }
+        
+    }
+    .landing__section4 {
+        position: relative;
+        color: $white;
+        float: left;
+        width: 100%;
+        min-height: 460px;
+        margin-top: -100px;
+
+        &-bkg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transform: scaleX(-1) scaleY(-1);
+            background: $gradient;
+        }
+
+        .footer__logo {
+            clear: both;
+            float: left;
+        }
+    
+        .powered {
+            margin-top: 15px;
+            clear: both;
+            float: left;
+        }
+
+        .container {
+            margin-top: 360px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .arrow_top {
+            position: absolute;
+            top: -200px;
+            right: 0;
+            font-size: 3em;
+
+            @media only screen and (max-width: 1200px){
+                font-size: 2em;
+            }
+        
+            @media only screen and (max-width: 992px){
+                font-size: 1.5em;
+            }
+
+            i {
+                font-size: 2.2em;
+                margin-right: 50px;
+                float: left;
+                cursor: pointer;
+                color: $white;
+    
+                &:hover {
+                    color: $green;
+                }
+            }
+        } 
+        
+        .footer__nav {
+            float: right;
+            color: $white;
+    
+            @media only screen and (max-width: 992px){
+                margin-top: 25px;
+            }
+    
+            ul {
+                list-style: none;
+    
+                li {
+                    float: left;
+                    margin-left: 25px;
+    
+                    @media only screen and (max-width: 1200px){
+                        margin-left: 15px;
+                    }
+    
+                    a {
+                        color: $white;
+    
+                        &:hover {
+                            color: $green;
+                        }
+    
+                        &.inactive {
+                            color: $gray;
+                            pointer-events: none;
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .social__icons {
+            float: right;
+            clear: both;
+            margin-top: 15px;
+    
+            @media only screen and (max-width: 1200px){
+                margin-top: 5px;
+            }
+    
+            ul {
+                list-style: none;
+    
+                li {
+                    float: right;
+                    margin-left: 25px;
+    
+                    @media only screen and (max-width: 1200px){
+                        margin-left: 15px;
+                    }
+    
+                    a {
+                        color: $white;
+    
+                        &:hover {
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

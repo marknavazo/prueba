@@ -1,0 +1,78 @@
+#list {
+    margin-top: 50px;
+    text-align: center;
+
+    .add__user {
+        color: $green;
+        font-size: 1.2em;
+        display: inline-block;
+
+        span {
+            float: left;
+            margin-right: 10px;
+            height: 35px;
+            line-height: 35px;
+
+            @media only screen and (max-width: $xs){
+                display: none;
+            }
+        }
+
+        i {
+            font-size: 2em;
+        }
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    .user {
+        display: inline-block;
+        width: 90%;
+        margin: 0px auto;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        margin: 10px 0;
+        padding: 20px;   
+        position: relative;     
+
+        img {
+            float: left;
+            border-radius: 50%;
+            @include transition(all .4s ease-in-out);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .user__data {
+            float: right;
+            width: calc(100% - 150px);
+            margin-bottom: 20px;
+
+            .id__user {
+                font-size: 1.1em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+
+            h4 {
+                font-size: 1em;
+            }
+        }
+        a {
+            position: absolute;
+            bottom: 10px; 
+            right: 15px;
+            color: $black;
+            font-size: 1.5em;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}

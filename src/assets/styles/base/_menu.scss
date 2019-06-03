@@ -1,0 +1,162 @@
+nav.left__menu {
+    float: left;
+    margin-top: 19px;
+
+    @media only screen and (max-width: $xs){
+        display: none;
+    }
+
+    ul {
+        float: left;
+        list-style: none;
+        margin-bottom: 0;
+
+        li{
+            float: left;
+            margin-right: 25px;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $green;
+                }
+
+                &.selected {
+                    color: $green;
+                }
+                
+                &.inactive {
+                    color: $gray;
+                    pointer-events: none;
+                    cursor: default;
+                }
+            }
+        }
+    } 
+}
+
+nav.right__menu {
+    float: right;
+
+    @media only screen and (max-width: $xs){
+        display: none;
+    }
+
+    .profile{
+        float: right; 
+        position: relative; 
+        cursor: pointer;      
+        z-index: 2;
+
+        .name {
+            font-weight: bold;
+            font-size: 41px;
+            line-height: 50px;
+            color: $white;
+
+            i {
+                font-size: .4em;
+            }
+        }
+
+        ul {
+            background: $white;
+            width: 150px;
+            position: absolute;
+            right: 0;
+            top: 50px;
+            display: none;
+            padding: 0;
+            list-style: none;
+            margin: 0;      
+            border: 1px solid $black;                  
+
+            li {
+                float: left;
+                width: 100%;
+                padding: 3px 20px;
+                
+                &.session {
+                    border-top: 1px solid #ccc;
+                }
+
+                a {
+                    color: $black;
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                button {
+                    width: 100%;
+                    border: 0;
+                    background: transparent;
+                    text-align: left;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1em;
+                }
+
+                &:hover {
+                    background: $green;
+                    
+                    a {
+                        color: $white;
+                    }
+
+                    button {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .profile:hover {
+        ul {
+            display: block;
+        }
+    }
+
+    form {
+        float: right;
+        position: relative;
+        margin-top: 6px;
+
+        input {
+            float: right;
+            margin-right: 20px;
+            height: 38px;	
+            width: 260.22px;
+            border: 1px solid #FFFFFF;
+            background: transparent;
+            border-radius: 4px;
+            padding-left: 30px;
+            color: $white;
+            font-size: 1em;
+            position: relative;
+
+            &::placeholder {
+                color: $inputsGray;
+                opacity: 1;
+            }
+
+            &:-ms-input-placeholder {
+                color: $inputsGray;
+            }
+
+            &::-ms-input-placeholder {
+                color: $inputsGray;
+            }
+        }
+        
+        i {            
+            color: $inputsGray;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    
+}
