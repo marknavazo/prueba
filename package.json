@@ -1,8 +1,7 @@
 {
   "name": "login",
   "version": "0.1.0",
-  "homepage": "http://localhost:8080/",
-  "main": "src/index.js",
+  "homepage": "https://marknavazo.github.io/prueba/",
   "author": "Marcos Díaz Navazo",
   "private": true,
   "dependencies": {
